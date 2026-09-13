@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InverseLux</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-group">
+        <div class="logo-orb" id="status-orb"></div>
+        <div>
+          <h1 class="title">INVERSELUX</h1>
+          <span class="subtitle">Circadian Hostility Engine</span>
+        </div>
+      </div>
+      <label class="switch" title="Toggle Hostility Engine">
+        <input type="checkbox" id="master-toggle" checked>
+        <span class="slider round"></span>
+      </label>
+    </header>
+
+    <!-- Helper Tip (shown when sensor needs user click) -->
+    <div id="setup-tip" class="tip-banner">
+      <span class="tip-icon">⚡</span>
+      <span id="tip-text">Click anywhere on the web page to engage the adversarial sensor.</span>
+    </div>
+
+    <!-- Live Photon Gauge Card -->
+    <section class="card sensor-card">
+      <div class="card-header">
+        <span class="label">HOSTILITY LUX AUDIT</span>
+        <span id="state-badge" class="badge badge-waiting">STANDBY</span>
+      </div>
+
+      <div class="gauge-container">
+        <div class="lux-metric">
+          <span id="lux-value" class="lux-number">--</span>
+          <span class="lux-unit">% LUX</span>
+        </div>
+        <div class="meter-bar-bg">
+          <div id="meter-fill" class="meter-bar-fill"></div>
+          <div id="meter-threshold-marker" class="threshold-marker" title="Threshold"></div>
+        </div>
+        <div class="meter-labels">
+          <span>0% FLASHBANG</span>
+          <span id="threshold-label-indicator">THRESH: 35%</span>
+          <span>100% BLACKOUT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calibration & Settings Card -->
+    <section class="card settings-card">
+      <div class="setting-item">
+        <div class="setting-label-row">
+          <label for="threshold-slider" class="setting-title">Hostility Threshold</label>
+          <span id="threshold-val" class="setting-value">35%</span>
+        </div>
+        <input type="range" id="threshold-slider" min="10" max="75" value="35" class="slider-input">
+        <div class="slider-hint">Enforces Flashbang below this lux; Blackout Void above this lux.</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="setting-row">
+        <div>
+          <div class="setting-title">Flashbang 'Fah' Chord</div>
+          <div class="setting-hint">Play triumphant celestial choir on flashbang detonation</div>
+        </div>
+        <label class="switch switch-sm">
+          <input type="checkbox" id="sound-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="setting-item" id="sound-controls-group">
+        <div class="setting-label-row">
+          <span class="setting-hint">Volume</span>
+          <div class="test-sound-group">
+            <span id="volume-val" class="setting-value">70%</span>
+            <button id="test-sound-btn" class="btn-test" title="Test Flashbang chord">▶ Test</button>
+          </div>
+        </div>
+        <input type="range" id="volume-slider" min="5" max="100" value="70" class="slider-input">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="setting-row">
+        <div>
+          <div class="setting-title">Glare Compensation</div>
+          <div class="setting-hint">Prevents self-blinding monitor reflection loop</div>
+        </div>
+        <label class="switch switch-sm">
+          <input type="checkbox" id="glare-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <div class="setting-title">In-Page Hostility HUD</div>
+          <div class="setting-hint">Show floating adversarial status pill on web pages</div>
+        </div>
+        <label class="switch switch-sm">
+          <input type="checkbox" id="hud-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Anti-Strobe Buffer: ±5%</span>
+      <span id="hardware-status">⚡ Hostile Engine Online</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

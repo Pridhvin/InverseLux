@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "InverseLux: Circadian Hostility Engine",
+  "version": "2.0.0",
+  "description": "Blinds you with a #FFFFFF flashbang in pitch darkness; plunges you into an obsidian blackout void in broad daylight. Pure anti-ergonomic warfare.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "InverseLux"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["fah.mp3"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
