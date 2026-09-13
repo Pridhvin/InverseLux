@@ -47,7 +47,6 @@ InverseLux restores evolutionary resilience through an in-browser photometric su
 **For Hardware:**
 - **Main Components:** Integrated Laptop Webcam or USB Webcam (used as an adversarial optical lux meter)
 - **Specifications:** Minimum 64x64 video capture stream
-- **Tools Required:** A hand, thumb, or dark cloth (for inducing simulated nighttime and triggering flashbangs)
 
 ---
 
@@ -80,26 +79,6 @@ You can also run InverseLux instantly on any webpage via your browser's Develope
 
 ---
 
-## How to Deliver the 60-Second Demo
-
-1. **The Setup:**  
-   Open a regular article or Wikipedia page. The room lights are on, so the screen is currently dim, pitch-black, and unreadable (`BLACKOUT MODE`).
-
-2. **The Delivery:**  
-   > *"Every operating system tries to make reading comfortable. But comfort breeds complacency. We asked: why should technology adapt to human eyes when human eyes have millions of years of evolutionary resilience?"*
-
-3. **The Action:**  
-   - Squint at the screen under the lights:  
-     > *"Under daylight, we enforce pure Blackout Mode so you can barely discern your own code."*
-   - Then, put your hand firmly over the webcam:  
-     > *"And when you seek refuge in the dark..."*
-   - The screen instantly detonates into blinding white `#FFFFFF` at 140% brightness. Squint dramatically and shield your eyes.
-
-4. **The Closing Punchline:**  
-   > *"InverseLux: Never let your eyes get comfortable."*
-
----
-
 ## Project Documentation
 
 ### Screenshots
@@ -111,7 +90,7 @@ You can also run InverseLux instantly on any webpage via your browser's Develope
 ### Project Demo
 
 #### Video
-[Add your demo video link here]  
+(https://drive.google.com/drive/folders/1TFjDTeNZhUAjoXQod3lzTvHiIqfTKrOL)
 _Demonstrates live transitions between room lighting conditions, showing the instant inverted glare and the HUD audit response._
 
 ---
